@@ -5,6 +5,10 @@
  */
 package Formularios;
 
+import Classes.Dados;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author alexe
@@ -35,6 +39,8 @@ public class frmLogin extends javax.swing.JFrame {
         cmdSair = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Login");
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setText("Usuário:");
@@ -43,8 +49,18 @@ public class frmLogin extends javax.swing.JFrame {
         jLabel2.setText("Senha:");
 
         cmdLogin.setText("Login");
+        cmdLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdLoginActionPerformed(evt);
+            }
+        });
 
         cmdSair.setText("Sair");
+        cmdSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmdSairActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -87,6 +103,29 @@ public class frmLogin extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void cmdSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdSairActionPerformed
+        //FUNÇÃO: fechar o programa
+        this.dispose(); //fecha o programa
+    }//GEN-LAST:event_cmdSairActionPerformed
+
+    private void cmdLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLoginActionPerformed
+        //FUNÇÃO: VALIDAR DADOS INFORMADOS
+        Dados clsDados = new Dados();
+        if (!clsDados.validarUsuarios(txtUsuario.getText(), new String(txtSenha.getPassword()))){
+            JOptionPane.showMessageDialog(rootPane, "Atenção! Usuário e/ou senha incorretos!");
+            txtUsuario.setText("");
+            txtSenha.setText("");
+            txtUsuario.requestFocusInWindow(); //volta o foco para o campo de usuario
+            return;
+        }
+        
+        frmMenu Menu = new frmMenu();
+        this.setVisible(false);
+        Menu.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        Menu.setVisible(true);
+        
+    }//GEN-LAST:event_cmdLoginActionPerformed
 
     /**
      * @param args the command line arguments
