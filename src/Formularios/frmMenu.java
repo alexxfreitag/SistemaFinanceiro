@@ -29,59 +29,71 @@ public class frmMenu extends javax.swing.JFrame {
 
         jMenuBar1 = new javax.swing.JMenuBar();
         mnarquivos = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        mnarquivosclientes = new javax.swing.JMenuItem();
+        mnarquivosprodutos = new javax.swing.JMenuItem();
+        mnarquivosusuarios = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
+        mnarquivosaltsenha = new javax.swing.JMenuItem();
+        mnarquivosaltusuario = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
-        jMenuItem6 = new javax.swing.JMenuItem();
+        mnarquivossair = new javax.swing.JMenuItem();
         mnmovimentos = new javax.swing.JMenu();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
-        jSeparator3 = new javax.swing.JPopupMenu.Separator();
+        mnmovimentosvendas = new javax.swing.JMenuItem();
+        mnmovimentosrelvendas = new javax.swing.JMenuItem();
         mnajuda = new javax.swing.JMenu();
+        mnajudasobre = new javax.swing.JMenuItem();
+        mnajudaajuda = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         mnarquivos.setText("Arquivos");
 
-        jMenuItem1.setText("Clientes");
-        mnarquivos.add(jMenuItem1);
+        mnarquivosclientes.setText("Clientes");
+        mnarquivos.add(mnarquivosclientes);
 
-        jMenuItem2.setText("Produtos");
-        mnarquivos.add(jMenuItem2);
+        mnarquivosprodutos.setText("Produtos");
+        mnarquivos.add(mnarquivosprodutos);
 
-        jMenuItem3.setText("Usuários");
-        mnarquivos.add(jMenuItem3);
+        mnarquivosusuarios.setText("Usuários");
+        mnarquivos.add(mnarquivosusuarios);
         mnarquivos.add(jSeparator1);
 
-        jMenuItem4.setText("Alterar Senha");
-        mnarquivos.add(jMenuItem4);
+        mnarquivosaltsenha.setText("Alterar Senha");
+        mnarquivos.add(mnarquivosaltsenha);
 
-        jMenuItem5.setText("Alterar Usuário");
-        mnarquivos.add(jMenuItem5);
+        mnarquivosaltusuario.setText("Alterar Usuário");
+        mnarquivos.add(mnarquivosaltusuario);
         mnarquivos.add(jSeparator2);
 
-        jMenuItem6.setText("Sair");
-        mnarquivos.add(jMenuItem6);
+        mnarquivossair.setText("Sair");
+        mnarquivos.add(mnarquivossair);
 
         jMenuBar1.add(mnarquivos);
 
         mnmovimentos.setText("Movimentos");
 
-        jMenuItem7.setText("Vendas");
-        jMenuItem7.setToolTipText("");
-        mnmovimentos.add(jMenuItem7);
+        mnmovimentosvendas.setText("Vendas");
+        mnmovimentosvendas.setToolTipText("");
+        mnmovimentos.add(mnmovimentosvendas);
 
-        jMenuItem8.setText("Relatórios Vendas");
-        mnmovimentos.add(jMenuItem8);
-        mnmovimentos.add(jSeparator3);
+        mnmovimentosrelvendas.setText("Relatórios Vendas");
+        mnmovimentosrelvendas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnmovimentosrelvendasActionPerformed(evt);
+            }
+        });
+        mnmovimentos.add(mnmovimentosrelvendas);
 
         jMenuBar1.add(mnmovimentos);
 
         mnajuda.setText("Ajuda");
+
+        mnajudasobre.setText("Sobre");
+        mnajuda.add(mnajudasobre);
+
+        mnajudaajuda.setText("Ajuda");
+        mnajuda.add(mnajudaajuda);
+
         jMenuBar1.add(mnajuda);
 
         setJMenuBar(jMenuBar1);
@@ -99,6 +111,10 @@ public class frmMenu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void mnmovimentosrelvendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnmovimentosrelvendasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mnmovimentosrelvendasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -137,19 +153,20 @@ public class frmMenu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
-    private javax.swing.JPopupMenu.Separator jSeparator3;
     private javax.swing.JMenu mnajuda;
+    private javax.swing.JMenuItem mnajudaajuda;
+    private javax.swing.JMenuItem mnajudasobre;
     private javax.swing.JMenu mnarquivos;
+    private javax.swing.JMenuItem mnarquivosaltsenha;
+    private javax.swing.JMenuItem mnarquivosaltusuario;
+    private javax.swing.JMenuItem mnarquivosclientes;
+    private javax.swing.JMenuItem mnarquivosprodutos;
+    private javax.swing.JMenuItem mnarquivossair;
+    private javax.swing.JMenuItem mnarquivosusuarios;
     private javax.swing.JMenu mnmovimentos;
+    private javax.swing.JMenuItem mnmovimentosrelvendas;
+    private javax.swing.JMenuItem mnmovimentosvendas;
     // End of variables declaration//GEN-END:variables
 }
