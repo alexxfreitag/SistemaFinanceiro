@@ -27,6 +27,7 @@ public class frmMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        DeskPainel = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnarquivos = new javax.swing.JMenu();
         mnarquivosclientes = new javax.swing.JMenuItem();
@@ -46,6 +47,19 @@ public class frmMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        DeskPainel.setBackground(new java.awt.Color(204, 204, 204));
+
+        javax.swing.GroupLayout DeskPainelLayout = new javax.swing.GroupLayout(DeskPainel);
+        DeskPainel.setLayout(DeskPainelLayout);
+        DeskPainelLayout.setHorizontalGroup(
+            DeskPainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 862, Short.MAX_VALUE)
+        );
+        DeskPainelLayout.setVerticalGroup(
+            DeskPainelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 551, Short.MAX_VALUE)
+        );
+
         mnarquivos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/application.png"))); // NOI18N
         mnarquivos.setText("Arquivos");
 
@@ -59,6 +73,11 @@ public class frmMenu extends javax.swing.JFrame {
 
         mnarquivosusuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/user.png"))); // NOI18N
         mnarquivosusuarios.setText("Usuários");
+        mnarquivosusuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnarquivosusuariosActionPerformed(evt);
+            }
+        });
         mnarquivos.add(mnarquivosusuarios);
         mnarquivos.add(jSeparator1);
 
@@ -68,6 +87,11 @@ public class frmMenu extends javax.swing.JFrame {
 
         mnarquivosaltusuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/user_edit.png"))); // NOI18N
         mnarquivosaltusuario.setText("Alterar Usuário");
+        mnarquivosaltusuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnarquivosaltusuarioActionPerformed(evt);
+            }
+        });
         mnarquivos.add(mnarquivosaltusuario);
         mnarquivos.add(jSeparator2);
 
@@ -115,11 +139,11 @@ public class frmMenu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 862, Short.MAX_VALUE)
+            .addComponent(DeskPainel)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 551, Short.MAX_VALUE)
+            .addComponent(DeskPainel)
         );
 
         pack();
@@ -128,6 +152,18 @@ public class frmMenu extends javax.swing.JFrame {
     private void mnmovimentosrelvendasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnmovimentosrelvendasActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_mnmovimentosrelvendasActionPerformed
+
+    private void mnarquivosaltusuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnarquivosaltusuarioActionPerformed
+        // TODO add your handling code here:
+      
+    }//GEN-LAST:event_mnarquivosaltusuarioActionPerformed
+
+    private void mnarquivosusuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnarquivosusuariosActionPerformed
+        // TODO add your handling code here:
+          frmUsuarios usuarios = new frmUsuarios();
+        DeskPainel.add(usuarios);
+        usuarios.show();
+    }//GEN-LAST:event_mnarquivosusuariosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -165,6 +201,7 @@ public class frmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDesktopPane DeskPainel;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
