@@ -6,21 +6,33 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="mnarquivos">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagens/icons/application.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Arquivos"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="mnarquivosclientes">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Imagens/icons/user_suit.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Clientes"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="mnarquivosprodutos">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Imagens/icons/page_white_paste.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Produtos"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="mnarquivosusuarios">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Imagens/icons/user.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Usu&#xe1;rios"/>
               </Properties>
             </MenuItem>
@@ -28,11 +40,17 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="mnarquivosaltsenha">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Imagens/icons/pencil_go.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Alterar Senha"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="mnarquivosaltusuario">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Imagens/icons/user_edit.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Alterar Usu&#xe1;rio"/>
               </Properties>
             </MenuItem>
@@ -40,6 +58,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="mnarquivossair">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Imagens/icons/exclamation.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Sair"/>
               </Properties>
             </MenuItem>
@@ -47,17 +68,26 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="mnmovimentos">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagens/icons/page.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Movimentos"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="mnmovimentosvendas">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Imagens/icons/money.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Vendas"/>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="mnmovimentosrelvendas">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Imagens/icons/page_excel.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Relat&#xf3;rios Vendas"/>
               </Properties>
               <Events>
@@ -68,16 +98,25 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="mnajuda">
           <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Imagens/icons/find.png"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Ajuda"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="mnajudasobre">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Imagens/icons/information.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Sobre"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="mnajudaajuda">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/Imagens/icons/help.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Ajuda"/>
               </Properties>
             </MenuItem>

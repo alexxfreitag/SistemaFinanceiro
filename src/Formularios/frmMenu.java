@@ -46,36 +46,46 @@ public class frmMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        mnarquivos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/application.png"))); // NOI18N
         mnarquivos.setText("Arquivos");
 
+        mnarquivosclientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/user_suit.png"))); // NOI18N
         mnarquivosclientes.setText("Clientes");
         mnarquivos.add(mnarquivosclientes);
 
+        mnarquivosprodutos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/page_white_paste.png"))); // NOI18N
         mnarquivosprodutos.setText("Produtos");
         mnarquivos.add(mnarquivosprodutos);
 
+        mnarquivosusuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/user.png"))); // NOI18N
         mnarquivosusuarios.setText("Usuários");
         mnarquivos.add(mnarquivosusuarios);
         mnarquivos.add(jSeparator1);
 
+        mnarquivosaltsenha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/pencil_go.png"))); // NOI18N
         mnarquivosaltsenha.setText("Alterar Senha");
         mnarquivos.add(mnarquivosaltsenha);
 
+        mnarquivosaltusuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/user_edit.png"))); // NOI18N
         mnarquivosaltusuario.setText("Alterar Usuário");
         mnarquivos.add(mnarquivosaltusuario);
         mnarquivos.add(jSeparator2);
 
+        mnarquivossair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/exclamation.png"))); // NOI18N
         mnarquivossair.setText("Sair");
         mnarquivos.add(mnarquivossair);
 
         jMenuBar1.add(mnarquivos);
 
+        mnmovimentos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/page.png"))); // NOI18N
         mnmovimentos.setText("Movimentos");
 
+        mnmovimentosvendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/money.png"))); // NOI18N
         mnmovimentosvendas.setText("Vendas");
         mnmovimentosvendas.setToolTipText("");
         mnmovimentos.add(mnmovimentosvendas);
 
+        mnmovimentosrelvendas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/page_excel.png"))); // NOI18N
         mnmovimentosrelvendas.setText("Relatórios Vendas");
         mnmovimentosrelvendas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,11 +96,14 @@ public class frmMenu extends javax.swing.JFrame {
 
         jMenuBar1.add(mnmovimentos);
 
+        mnajuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/find.png"))); // NOI18N
         mnajuda.setText("Ajuda");
 
+        mnajudasobre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/information.png"))); // NOI18N
         mnajudasobre.setText("Sobre");
         mnajuda.add(mnajudasobre);
 
+        mnajudaajuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons/help.png"))); // NOI18N
         mnajudaajuda.setText("Ajuda");
         mnajuda.add(mnajudaajuda);
 
